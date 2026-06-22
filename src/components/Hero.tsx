@@ -180,8 +180,8 @@ export function Hero() {
             color: "#5a5750",
           }}
         >
-          I'm Alejandro — a 2026 Computer Science grad from CSU Fullerton looking to break
-          into software engineering. I love building backends, REST APIs, and clean
+          I'm Alejandro Silva, a 2026 Computer Science grad from CSU Fullerton looking to break
+          into software engineering. I love working on full-stack apps, building APIs, and working on clean
           interfaces, and I'm eager to keep learning and grow with a great team.
         </p>
 

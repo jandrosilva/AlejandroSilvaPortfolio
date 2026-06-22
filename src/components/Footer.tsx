@@ -8,7 +8,7 @@ export function Footer() {
         alignItems: "center",
         flexWrap: "wrap",
         gap: 14,
-        borderTop: "1px solid rgba(23,32,51,.08)",
+        borderTop: "1px solid rgba(23,32,51,.18)",
         marginTop: 20,
       }}
     >
@@ -22,7 +22,7 @@ export function Footer() {
       >
         Alejandro Silva
       </div>
-      <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#8a8478" }}>
+      <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#5a5750" }}>
         © 2026 · Built with care
       </div>
     </footer>

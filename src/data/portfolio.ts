@@ -108,8 +108,8 @@ export const projects: Project[] = [
     tag: "AI",
     shot: "project screenshot",
     title: "AniAskMe",
-    desc: "An AI-powered question-and-answer assistant — ask in natural language and get conversational, context-aware responses. Built around LLM integration and prompt-engineering workflows.",
-    stack: ["Python", "LLM", "React"],
+    desc: "A full-stack anime recommendation engine that turns a plain-English request into personalized, explained picks that's powered by a hybrid recommender and live AniList data.",
+    stack: ["Python", "SQLite", "React", "OAuth 2.0", "AniList GraphQL API"],
     link: contact.githubUrl,
     cta: "View project",
   },
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     tag: "WEB",
     shot: "project screenshot",
     title: "Library Connect",
-    desc: "A full-stack 0→1 platform modernizing the patron sign-up workflow at Orange Public Library — backend schema, REST API layer, and self-service data tools, containerized with Docker. Informed by a system serving 70,000+ registered patrons.",
+    desc: "A full-stack 0→1 platform modernizing the patron sign-up workflow at Orange Public Library, built with a team and containerized with Docker. I focused on the React front-end and CI/CD testing, shaping the interface around how staff and patrons actually use it, informed by four years working in a system serving 70,000+ registered patrons.",
     stack: ["React", "Rails API", "PostgreSQL", "Docker"],
     link: contact.githubUrl,
     cta: "View project",
@@ -144,10 +144,10 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     role: "Software Engineering Intern",
-    org: "Greater Angels Software, LLC (Titan Software Studio) · Fullerton, CA",
+    org: "Greater Angels Software, LLC · Fullerton, CA",
     period: "Mar 2026 — Present",
     detail:
-      "Designed relational data models and optimized SQL queries for a schema informed by a production system serving 70,000+ patron records. Built full-stack features in React and Flask for a self-service data portal (ClubHub) reaching 40,000+ CSUF students, plus REST API layers in FastAPI and Rails API — using Gemini and prompt engineering to accelerate delivery.",
+      "Designed relational data models and optimized SQL queries for a schema informed by a production system serving 70,000+ patron records. Built full-stack features in React and Flask for a self-service data portal (ClubHub) to reach 40,000+ CSUF students, plus REST API layers in FastAPI and Rails API — using Claude and prompt engineering to accelerate delivery.",
   },
   {
     role: "Library Clerk",

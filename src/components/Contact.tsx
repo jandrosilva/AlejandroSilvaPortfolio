@@ -137,7 +137,7 @@ export function Contact() {
               }}
             >
               Open to software engineering roles and interesting collaborations. The
-              fastest way to reach me is email — I usually reply within a day.
+              fastest way to reach me is email, I usually reply within a day.
             </p>
             <a
               href={mailto}
@@ -175,7 +175,7 @@ export function Contact() {
               download
               icon={<DownloadIcon size={18} />}
               label="Resume"
-              value="Download résumé"
+              value="Download resume"
             />
           </div>
         </div>

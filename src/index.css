@@ -115,7 +115,10 @@ section[id] {
 [data-reveal] {
   animation: revUp both linear;
   animation-timeline: view();
-  animation-range: entry 4% cover 38%;
+  /* Complete on the `entry` phase (how far the element has entered the
+     viewport) rather than `cover` — otherwise the last section before the
+     footer can't be scrolled far enough to finish and freezes mid-fade. */
+  animation-range: entry 5% entry 55%;
 }
 /* One-shot entrance for above-the-fold (hero) elements. */
 [data-enter] {

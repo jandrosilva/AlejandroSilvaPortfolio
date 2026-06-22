@@ -9,9 +9,9 @@ export function About() {
           index="01 — About"
           title={
             <>
-              Engineer by training,
+              Aspiring Software Engineer,
               <br />
-              builder by instinct.
+              looking to build a better future.
             </>
           }
         />
@@ -26,18 +26,22 @@ export function About() {
             <strong style={{ color: "#172033" }}>
               CSU Fullerton's College of Engineering &amp; Computer Science
             </strong>
-            . I like the full arc of building software — gathering requirements, modeling
-            the data, writing the API, and shipping an interface people actually want to
-            use.
+            . What I like most about building software is the whole arc of it: sitting with a problem
+            until I understand it, modeling the data, writing the API, and then building an interface
+            people actually want to use.
           </p>
           <p style={{ marginBottom: 18 }}>
-            My comfort zone runs deep on the backend: relational schema design, query
-            optimization, and clean REST APIs. Lately I've been pairing that with
-            AI-assisted development and LLM integration to ship 0→1 products faster.
+            I'm most drawn to the backend. I've designed relational schemas, written REST APIs, and 
+            built full-stack applications from the data layer up, including a recommendation engine
+             that pulls from a live external API, and a municipal app that modernizes how a public 
+             library registers patrons. I pair that work with AI tools to help me move from an idea
+              to a working product faster, and I've spent time learning how to use those tools efficiently
+              rather than just relying on them as a crutch.
           </p>
           <p>
-            I care about readable code, honest documentation, and the small details that
-            make a product feel finished.
+            I am early in my career and I know it, which mostly means that I am passionate about getting
+             better. I am honest about my skillset and my abilities because I truly believe, I'd much rather
+             ask questions than pretend I have it all figured out.
           </p>
         </div>
 
