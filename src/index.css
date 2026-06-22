@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens — exposed to Tailwind utilities (bg-cream,
+   text-ink, text-accent, font-sora, font-mono, ...)
+   ============================================================ */
+@theme {
+  --color-cream: #efece5;
+  --color-cream-2: #e8e4dc;
+  --color-ink: #172033;
+  --color-accent: #9c7b43;
+  --color-muted: #5a5750;
+  --color-muted-2: #46515f;
+  --color-faint: #8a8478;
+  --color-chip: #f1efe8;
+
+  --font-sora: "Sora", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-serif: "Spectral", Georgia, serif;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+:root {
+  --accent: #9c7b43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #efece5;
+  color: #172033;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #172033;
+  color: #fff;
+}
+
+/* fixed pill-nav clearance for in-page anchor jumps */
+section[id] {
+  scroll-margin-top: 96px;
+}
+
+/* ============================================================
+   Keyframes
+   ============================================================ */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 170, 108, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(34, 170, 108, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 170, 108, 0);
+  }
+}
+@keyframes gridpan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 42px 42px;
+  }
+}
+/* Reveals use the independent `translate`/`scale` props (not `transform`)
+   so element hover transforms still work. */
+@keyframes revUp {
+  from {
+    opacity: 0;
+    translate: 0 70px;
+    scale: 0.97;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes enterUp {
+  from {
+    opacity: 0;
+    translate: 0 30px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* Scroll-driven reveal for below-the-fold sections.
+   Falls back to "just visible" where animation-timeline is unsupported. */
+[data-reveal] {
+  animation: revUp both linear;
+  animation-timeline: view();
+  animation-range: entry 4% cover 38%;
+}
+/* One-shot entrance for above-the-fold (hero) elements. */
+[data-enter] {
+  animation: enterUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.pulse-dot {
+  animation: pulse 2.4s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  [data-reveal],
+  [data-enter] {
+    animation: none !important;
+    opacity: 1 !important;
+    translate: none !important;
+    scale: none !important;
+  }
+  .pulse-dot {
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   Reusable component classes
+   ============================================================ */
+
+/* section index eyebrow ("01 — About") */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* white surface card */
+.card {
+  background: #fff;
+  border: 1px solid rgba(23, 32, 51, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 22px 40px -34px rgba(23, 32, 51, 0.45);
+}
+
+/* skill chip */
+.chip {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: var(--color-chip);
+  border: 1px solid rgba(23, 32, 51, 0.06);
+  color: #403d36;
+  padding: 7px 12px;
+  border-radius: 9px;
+}
+
+/* buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 13px;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn--primary {
+  background: #172033;
+  color: #fff;
+  padding: 15px 26px;
+  box-shadow: 0 18px 34px -18px rgba(23, 32, 51, 0.7);
+}
+.btn--primary:hover {
+  box-shadow: 0 24px 40px -18px rgba(23, 32, 51, 0.75);
+}
+.btn--ghost {
+  background: #fff;
+  color: #172033;
+  padding: 15px 22px;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+}
+.btn--ghost:hover {
+  border-color: var(--accent);
+}
+
+/* nav pill links */
+.navlink {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5750;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 999px;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.navlink:hover {
+  color: #172033;
+  background: rgba(23, 32, 51, 0.06);
+}
+.navlink.is-active {
+  color: #172033;
+  background: rgba(23, 32, 51, 0.07);
+}
+.navlink--cta {
+  color: #fff;
+  background: #172033;
+  font-weight: 600;
+  padding: 9px 18px;
+  margin-left: 4px;
+  transition: transform 0.25s;
+}
+.navlink--cta:hover {
+  transform: translateY(-1px);
+  background: #172033;
+}
+
+/* project card */
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 51, 0.07);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 26px 50px -42px rgba(23, 32, 51, 0.5);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.35s,
+    box-shadow 0.35s;
+}
+.proj-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 70px -42px rgba(23, 32, 51, 0.55);
+}
+.stack-chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: rgba(156, 123, 67, 0.08);
+  padding: 5px 9px;
+  border-radius: 7px;
+}
+
+/* contact links (dark card) */
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 16px 18px;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}
