@@ -8,10 +8,10 @@
   --color-cream: #efece5;
   --color-cream-2: #e8e4dc;
   --color-ink: #172033;
-  --color-accent: #9c7b43;
+  --color-accent: #7f6134;
   --color-muted: #5a5750;
   --color-muted-2: #46515f;
-  --color-faint: #8a8478;
+  --color-faint: #6b665c;
   --color-chip: #f1efe8;
 
   --font-sora: "Sora", system-ui, sans-serif;
@@ -24,7 +24,7 @@
    Base
    ============================================================ */
 :root {
-  --accent: #9c7b43;
+  --accent: #7f6134;
 }
 
 * {
