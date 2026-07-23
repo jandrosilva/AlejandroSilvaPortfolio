@@ -73,7 +73,7 @@ export function Skills() {
             fontFamily: "var(--font-mono)",
             fontSize: 11,
             letterSpacing: ".12em",
-            color: "#8a8478",
+            color: "var(--color-faint)",
             textTransform: "uppercase",
             marginRight: 6,
           }}
@@ -83,7 +83,7 @@ export function Skills() {
         {practices.map((p, i) => (
           <Fragment key={p}>
             <span style={{ fontSize: 14, color: "#46515f" }}>{p}</span>
-            {i < practices.length - 1 && <span style={{ color: "#c3c9d1" }}>·</span>}
+            {i < practices.length - 1 && <span style={{ color: "#5a5750" }}>·</span>}
           </Fragment>
         ))}
       </div>
