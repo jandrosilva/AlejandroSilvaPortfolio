@@ -83,7 +83,7 @@ export function Hero() {
                 color: "#fff",
               }}
             >
-              SWE Intern · Greater Angels
+              Full-Stack · React · TypeScript
             </span>
           </div>
         </div>
@@ -131,7 +131,7 @@ export function Hero() {
               fontFamily: "var(--font-mono)",
               fontSize: 12,
               letterSpacing: ".1em",
-              color: "#8a8478",
+              color: "#6b665c",
               textTransform: "uppercase",
             }}
           >
@@ -152,7 +152,7 @@ export function Hero() {
             margin: 0,
           }}
         >
-          Software engineer,
+          Full-stack engineer,
           <br />
           <span
             style={{
@@ -165,7 +165,7 @@ export function Hero() {
               letterSpacing: "-.01em",
             }}
           >
-            just getting started.
+            focused on the interface.
           </span>
         </h1>
 
@@ -180,9 +180,9 @@ export function Hero() {
             color: "#5a5750",
           }}
         >
-          I'm Alejandro Silva, a 2026 Computer Science grad from CSU Fullerton looking to break
-          into software engineering. I love working on full-stack apps, building APIs, and working on clean
-          interfaces, and I'm eager to keep learning and grow with a great team.
+          I'm Alejandro Silva, a 2026 Computer Science graduate from CSU Fullerton. I build full-stack
+          applications and the clean, accessible interfaces that make them work, in React, TypeScript,
+          and Python. I care about shipping real products and understanding every part of what I build.
         </p>
 
         <div
@@ -247,7 +247,7 @@ export function Hero() {
                   fontFamily: "var(--font-mono)",
                   fontSize: 10,
                   letterSpacing: ".14em",
-                  color: "#8a8478",
+                  color: "#6b665c",
                   textTransform: "uppercase",
                   marginTop: 5,
                 }}
