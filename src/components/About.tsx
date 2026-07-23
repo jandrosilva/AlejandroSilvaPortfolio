@@ -90,7 +90,7 @@ export function About() {
                     fontFamily: "var(--font-mono)",
                     fontSize: 11,
                     letterSpacing: ".12em",
-                    color: var(--color-faint),
+                    color: "var(--color-faint)",
                     textTransform: "uppercase",
                   }}
                 >
