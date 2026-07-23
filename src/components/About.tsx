@@ -11,7 +11,7 @@ export function About() {
             <>
               Full-stack engineer,
               <br />
-              strongest at the interface.
+              from the data up to the interface.
             </>
           }
         />
@@ -20,28 +20,28 @@ export function About() {
       <div className="mt-10 grid grid-cols-1 items-start gap-10 md:grid-cols-[1.3fr_1fr]">
         <div data-reveal style={{ fontSize: 18, lineHeight: 1.7, color: "#46515f" }}>
           <p style={{ marginBottom: 18 }}>
-            I'm a software engineer and{" "}
-            <strong style={{ color: "#172033" }}>B.S. Computer Science</strong> graduate
-            from{" "}
-            <strong style={{ color: "#172033" }}>
-              CSU Fullerton's College of Engineering &amp; Computer Science
-            </strong>
-            . What I like most about building software is the whole arc of it: sitting with a problem
-            until I understand it, modeling the data, writing the API, and then building an interface
-            people actually want to use.
+            I'm a software engineer and a{" "}
+            <strong style={{ color: "#172033" }}>computer science graduate</strong> from{" "}
+            <strong style={{ color: "#172033" }}>CSU Fullerton</strong>. I'm passionate about
+            engineering and using technology to solve real problems. So far in my journey, I've spent
+            the last few months building projects for the library I work at in Orange, and building a
+            better way to find shows as an avid anime viewer.
           </p>
           <p style={{ marginBottom: 18 }}>
-            I build across the stack, and the front-end is where I do my sharpest work. I've built
-            React and TypeScript interfaces backed by REST and GraphQL APIs, including a recommendation
-            engine that pulls from a live external API, and a municipal app that modernizes how a public
-            library registers patrons. I care about the details that make an interface feel considered
-            rather than merely functional, including accessibility and performance.
+            I've grown passionate about using my skills to help my community and people who enjoy the
+            things I enjoy.
+          </p>
+          <p style={{ marginBottom: 18 }}>
+            I work across the stack, but I love building the front-end. It feels expressive to me, and
+            it's where I can showcase my strongest work, using React, TypeScript, and Vite. I'm versed
+            in back-end technologies too. The apps I've helped develop have had me writing database
+            queries, building APIs, and putting together my own recommendation system.
           </p>
           <p>
-            I pair that work with AI development tools to move from an idea to a working product faster,
-            and I've put real effort into using them well, reviewing and validating what they produce
-            rather than leaning on them as a crutch. I'd much rather understand my own code than ship
-            something I can't explain.
+            Right now I'm using AI tools like Claude Code and Gemini to work more efficiently,
+            strengthen my understanding of new technologies, and debug cleanly, while still testing
+            myself on what I've built. I hope to find a home somewhere I can be passionate about the
+            mission and use what I have to help push things forward.
           </p>
         </div>
 
