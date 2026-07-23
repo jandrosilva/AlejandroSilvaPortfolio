@@ -19,8 +19,8 @@ export type Stat = {
 };
 
 export const stats: Stat[] = [
+  { value: 3, suffix: "", display: "3", label: "Full-Stack Projects" },
   { value: 7, suffix: "+", display: "7+", label: "Languages" },
-  { value: 10, suffix: "+", display: "10+", label: "Yrs Work Experience" },
   { value: null, display: "CS", label: "B.S. · CSUF '26" },
 ];
 
@@ -35,11 +35,11 @@ export const aboutCards: AboutCard[] = [
   {
     label: "Education",
     title: "B.S. Computer Science",
-    sub: "CSU Fullerton · 2026",
+    sub: "CSU Fullerton · Aug 2026",
   },
-  { label: "Focus", title: "Backend · Data · AI", sub: "APIs, SQL, LLM integration" },
+  { label: "Focus", title: "Full-Stack · Front-End", sub: "React, TypeScript, APIs" },
   {
-    label: "Currently",
+    label: "Experience",
     title: "SWE Intern",
     sub: "Greater Angels Software",
     dark: true,
@@ -56,31 +56,24 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
+    icon: "grid",
+    title: "Front-End",
+    items: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind", "Vite", "Accessibility (WCAG)"],
+  },
+  {
     icon: "code",
     title: "Languages",
-    items: ["Python", "SQL", "JavaScript / TS", "Java", "C / C++", "HTML", "CSS"],
+    items: ["JavaScript / TS", "Python", "SQL", "C / C++", "Java"],
   },
   {
     icon: "database",
-    title: "Data & AI",
-    items: [
-      "Schema design",
-      "Query optimization",
-      "Data modeling",
-      "REST APIs",
-      "LLM integration",
-      "Prompt engineering",
-    ],
+    title: "Back-End & Data",
+    items: ["REST APIs", "Node.js", "FastAPI", "Flask", "Rails API", "PostgreSQL", "Schema design"],
   },
   {
     icon: "cloud",
-    title: "Cloud & Infra",
-    items: ["AWS", "Google Cloud", "Docker", "CI/CD · GitHub Actions", "Azure", "Jira"],
-  },
-  {
-    icon: "grid",
-    title: "Frameworks & Tools",
-    items: ["React", "Flask", "FastAPI", "Rails API", "PostgreSQL", "Node.js", "Vite", "Tailwind"],
+    title: "Cloud & Tooling",
+    items: ["Docker", "CI/CD · GitHub Actions", "AWS", "Google Cloud", "Git", "Jira"],
   },
 ];
 
@@ -105,20 +98,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    tag: "AI",
+    tag: "FULL-STACK",
     shot: "project screenshot",
     title: "AniAskMe",
-    desc: "A full-stack anime recommendation engine that turns a plain-English request into personalized, explained picks that's powered by a hybrid recommender and live AniList data.",
-    stack: ["Python", "SQLite", "React", "OAuth 2.0", "AniList GraphQL API"],
+    desc: "A full-stack anime recommendation app I built because finding the next series to watch meant bouncing between forums and ad-filled sites. I built the React and TypeScript interface and a Python API, integrated the AniList GraphQL API over OAuth 2.0, and wrote a hybrid recommender that weights content similarity, collaborative filtering, and popularity, redistributing those weights when it lacks enough data on a user. It degrades gracefully when the upstream API goes down.",
+    stack: ["React", "TypeScript", "Python", "FastAPI", "GraphQL", "OAuth 2.0"],
     link: contact.githubUrl,
     cta: "View project",
   },
   {
-    tag: "WEB",
+    tag: "FRONT-END",
     shot: "project screenshot",
     title: "Library Connect",
-    desc: "A full-stack 0→1 platform modernizing the patron sign-up workflow at Orange Public Library, built with a team and containerized with Docker. I focused on the React front-end and CI/CD testing, shaping the interface around how staff and patrons actually use it, informed by four years working in a system serving 70,000+ registered patrons.",
-    stack: ["React", "Rails API", "PostgreSQL", "Docker"],
+    desc: "A full-stack platform built with a team to modernize the patron sign-up workflow at Orange Public Library. I built the React and TypeScript front-end and worked through CI/CD testing, shaping the interface around how staff and patrons actually use it — informed by four years working in a system serving 70,000+ registered patrons.",
+    stack: ["React", "TypeScript", "Rails API", "PostgreSQL", "Docker"],
     link: contact.githubUrl,
     cta: "View project",
   },
@@ -144,17 +137,17 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     role: "Software Engineering Intern",
-    org: "Greater Angels Software, LLC · Fullerton, CA",
-    period: "Mar 2026 — Present",
+    org: "Greater Angels Software, LLC · Azusa, CA",
+    period: "Apr 2026 — Jun 2026",
     detail:
-      "Designed relational data models and optimized SQL queries for a schema informed by a production system serving 70,000+ patron records. Built full-stack features in React and Flask for a self-service data portal (ClubHub) to reach 40,000+ CSUF students, plus REST API layers in FastAPI and Rails API — using Claude and prompt engineering to accelerate delivery.",
+      "Built full-stack features in React and TypeScript with Flask, FastAPI, and Rails API back-ends, and designed relational schemas and SQL queries against a data model informed by a system serving 70,000+ patron records. Worked in an Agile team with code review and CI/CD, using AI development tools to move faster while reviewing and validating their output before merging.",
   },
   {
     role: "Library Clerk",
     org: "Orange Public Library · Orange, CA",
     period: "Feb 2022 — Present",
     detail:
-      "Supported the Library Director and Technology Manager in evaluating and procuring cloud-based software across a platform serving 70,000+ registered patrons. Led an audit of 10,000+ physical and digital items to improve metadata accuracy, and lead the clerk marketing team, growing the library audience to 4,000+ followers.",
+      "Support the Lending Services and Technology managers in evaluating and rolling out cloud-based software across a platform serving 70,000+ registered patrons. Led an audit of 10,000+ physical and digital items to improve metadata accuracy, and lead the clerk marketing team, growing the library audience to 4,000+ followers.",
   },
   {
     role: "K-2 AI Instructor (Internship)",
@@ -166,8 +159,8 @@ export const experience: Experience[] = [
   {
     role: "B.S. Computer Science",
     org: "California State University, Fullerton · College of Engineering & Computer Science",
-    period: "May 2026",
+    period: "Expected Aug 2026",
     detail:
-      "Graduated from the College of Engineering & Computer Science with a focus on backend systems, data modeling, and applied AI.",
+      "Coursework across web front-end and back-end engineering, software architecture, data structures, database systems, and operating systems.",
   },
 ];
