@@ -9,9 +9,9 @@ export function About() {
           index="01 — About"
           title={
             <>
-              Aspiring Software Engineer,
+              Full-stack engineer,
               <br />
-              looking to build a better future.
+              strongest at the interface.
             </>
           }
         />
@@ -20,7 +20,7 @@ export function About() {
       <div className="mt-10 grid grid-cols-1 items-start gap-10 md:grid-cols-[1.3fr_1fr]">
         <div data-reveal style={{ fontSize: 18, lineHeight: 1.7, color: "#46515f" }}>
           <p style={{ marginBottom: 18 }}>
-            I'm a software engineer and recent{" "}
+            I'm a software engineer and{" "}
             <strong style={{ color: "#172033" }}>B.S. Computer Science</strong> graduate
             from{" "}
             <strong style={{ color: "#172033" }}>
@@ -31,17 +31,17 @@ export function About() {
             people actually want to use.
           </p>
           <p style={{ marginBottom: 18 }}>
-            I'm most drawn to the backend. I've designed relational schemas, written REST APIs, and 
-            built full-stack applications from the data layer up, including a recommendation engine
-             that pulls from a live external API, and a municipal app that modernizes how a public 
-             library registers patrons. I pair that work with AI tools to help me move from an idea
-              to a working product faster, and I've spent time learning how to use those tools efficiently
-              rather than just relying on them as a crutch.
+            I build across the stack, and the front-end is where I do my sharpest work. I've built
+            React and TypeScript interfaces backed by REST and GraphQL APIs, including a recommendation
+            engine that pulls from a live external API, and a municipal app that modernizes how a public
+            library registers patrons. I care about the details that make an interface feel considered
+            rather than merely functional, including accessibility and performance.
           </p>
           <p>
-            I am early in my career and I know it, which mostly means that I am passionate about getting
-             better. I am honest about my skillset and my abilities because I truly believe, I'd much rather
-             ask questions than pretend I have it all figured out.
+            I pair that work with AI development tools to move from an idea to a working product faster,
+            and I've put real effort into using them well, reviewing and validating what they produce
+            rather than leaning on them as a crutch. I'd much rather understand my own code than ship
+            something I can't explain.
           </p>
         </div>
 
